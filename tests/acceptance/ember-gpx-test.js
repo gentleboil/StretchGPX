@@ -31,13 +31,5 @@ module('Acceptance | ember gpx', function (hooks) {
     assert.strictEqual(currentURL(), '/swims');
     //assert.dom('h1').hasText('Stretch GPX - fit your run to your truth');
   });
-
-  test('visiting /', async function (assert) {
-    await visit('/');
-
-    assert.strictEqual(currentURL(), '/');
-    assert.dom('navbar').exists();
-    assert.dom('div').hasText('is the header');
-    //assert.dom('h1').hasText('Stretch GPX - fit your run to your truth');
-  });
+  
 });
